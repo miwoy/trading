@@ -4,7 +4,7 @@ const path = require("path");
 const models = require("models")
 const debugFactory = require("debug");
 
-const debug = debugFactory("cobweb:seeder");
+const debug = debugFactory("trading:seeder");
 
 
 const basename = path.basename(module.filename);

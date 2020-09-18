@@ -23,7 +23,7 @@ files.map(function (file) {
 	var _router = require(path.join(__dirname, file));
 	file = file.split(".js")[0]
 	let model = models[file]
-	if (model) buildRestful(_router, model)
+	// if (model) buildRestful(_router, model)
 	router.use("/" + (model ? inflection.pluralize(file.split(".js")[0]) : file.split(".js")[0]), _router.routes());
 	return file
 });

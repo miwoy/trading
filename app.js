@@ -12,7 +12,7 @@ const bodyparser = require("koa-body");
 const logger = require("koa-logger4miwoy");
 const middleware = require("./lib/middleware");
 const Debug = require("debug");
-const debug = Debug("cobweb");
+const debug = Debug("trading");
 const app = new Koa();
 const router = require("./routes");
 
