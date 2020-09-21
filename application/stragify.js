@@ -198,11 +198,12 @@ module.exports = () => {
     return {
         run(cb) {
             data = datas[datas.length - 1].data
+            let r = []
             data.map((d,i)=> {
                 let res = ss.map(s => {
                     return s(data.slice(0,i+1), data.length)
                 })
-                cb({
+                r.push({
                     date: i,
                     basic: {
                         price: d[0],
@@ -214,6 +215,7 @@ module.exports = () => {
                     s: res[3]
                 })
             })
+            cb(r)
         },
         props: {}
     }
