@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 var WebSocket = require('ws');
-var ws = new WebSocket("ws://192.168.1.6:3000/", {
+var ws = new WebSocket("ws://0.0.0.0:3000/", {
     origin: 'https://websocket.org',
     headers: {
         other: "test"
